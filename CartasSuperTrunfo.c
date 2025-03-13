@@ -153,7 +153,7 @@ int main() {
 
     printf("Super Poder: Carta %d venceu (%d)\n", (super_poder_2 > super_poder) + 1, super_poder > super_poder_2); //Comparação Super poder
 
-
+    
 
     return 0;
 }
