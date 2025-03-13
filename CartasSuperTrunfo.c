@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
@@ -31,6 +33,9 @@ int main() {
     float densidade_populacional;
     float pib_per_capita;
     float super_poder;
+    char sigla[3];
+    
+
 
     //Recolhe imformações do usuário
 
@@ -89,6 +94,7 @@ int main() {
     float densidade_populacional_2;
     float pib_per_capita_2;
     float super_poder_2;
+    char sigla_2[3];
 
     //Informações da Segunda carta
 
@@ -151,7 +157,54 @@ int main() {
 
     printf("PIB per Capita: Carta %d venceu (%d)\n", (pib_per_capita_2 > pib_per_capita) + 1, pib_per_capita > pib_per_capita_2); // comparação PIB per Capita
 
-    printf("Super Poder: Carta %d venceu (%d)\n", (super_poder_2 > super_poder) + 1, super_poder > super_poder_2); //Comparação Super poder
+    printf("Super Poder: Carta %d venceu (%d)\n\n", (super_poder_2 > super_poder) + 1, super_poder > super_poder_2); //Comparação Super poder
+
+    
+
+
+    //Comparação de cartas (Atributo: População)
+
+    if (strcmp(nome_cidade, "Rio de janeiro") == 0) {
+        
+        strcpy(sigla, "RJ");
+
+    } 
+    
+    else{
+
+        strcpy(sigla, "SP");
+    }
+
+
+    if (strcmp(nome_cidade_2, "São paulo") == 0) {
+        
+        strcpy(sigla_2, "SP");
+
+    } 
+    
+    else{
+
+        strcpy(sigla_2, "RJ");
+    }
+
+
+
+    
+    printf("Carta 1 - %s (%s) : %lu\n", nome_cidade, sigla, populacao);
+    
+    printf("Carta 2 - %s (%s) : %lu\n", nome_cidade_2, sigla_2, populacao_2);
+
+
+    if (populacao > populacao_2 ){
+ 
+        printf ("Resultado: Carta 1 (%s) venceu!", nome_cidade);
+
+    } 
+    
+    else {
+        printf ("Resultado: Carta 2 (%s) venceu!", nome_cidade_2);
+
+    }
 
     
 
