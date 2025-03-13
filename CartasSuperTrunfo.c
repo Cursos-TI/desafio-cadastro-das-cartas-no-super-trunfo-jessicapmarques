@@ -164,45 +164,45 @@ int main() {
 
     //Comparação de cartas (Atributo: População)
 
-    if (strcmp(nome_cidade, "Rio de janeiro") == 0) {
+    if (strcmp(nome_cidade, "Rio de janeiro") == 0) { //comparação do nome da cidade recebido
         
-        strcpy(sigla, "RJ");
+        strcpy(sigla, "RJ"); // sigla referente a cidade recebida definida
 
     } 
     
     else{
 
-        strcpy(sigla, "SP");
+        strcpy(sigla, "SP"); // comparação direfente da recebida mostra sigla da segunda cidade
     }
 
 
-    if (strcmp(nome_cidade_2, "São paulo") == 0) {
+    if (strcmp(nome_cidade_2, "São paulo") == 0) { //comparação do nome da cidade recebido
         
-        strcpy(sigla_2, "SP");
+        strcpy(sigla_2, "SP"); //sigla referente a cidade recebida definida
 
     } 
     
     else{
 
-        strcpy(sigla_2, "RJ");
+        strcpy(sigla_2, "RJ"); //comparação direfente da recebida mostra sigla da segunda cidade
     }
 
 
 
     
-    printf("Carta 1 - %s (%s) : %lu\n", nome_cidade, sigla, populacao);
+    printf("Carta 1 - %s (%s) : %lu\n", nome_cidade, sigla, populacao); // exibe cidade, sigla e população carta 1
     
-    printf("Carta 2 - %s (%s) : %lu\n", nome_cidade_2, sigla_2, populacao_2);
+    printf("Carta 2 - %s (%s) : %lu\n", nome_cidade_2, sigla_2, populacao_2); //exibe cadade, sigla e população carta 2
 
 
     if (populacao > populacao_2 ){
  
-        printf ("Resultado: Carta 1 (%s) venceu!", nome_cidade);
+        printf ("Resultado: Carta 1 (%s) venceu!", nome_cidade); //exibe carta vencedora
 
     } 
     
     else {
-        printf ("Resultado: Carta 2 (%s) venceu!", nome_cidade_2);
+        printf ("Resultado: Carta 2 (%s) venceu!", nome_cidade_2); //exibe carta vencedora
 
     }
 
